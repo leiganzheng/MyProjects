@@ -30,3 +30,9 @@
     requirements.txt列出一些依赖包，这样就可以很容易的在不同的计算机上部署一个相同的虚拟环境。
     config.py存储了一些配置设置。
     manage.py用于启动应用程序和其他应用程序任务。
+
+    应用程序的路由都保存在app/main/views.py模块内部
+可以在不同的机器上重新生成虚拟环境
+    pip freeze >requirements.txt
+当你需要完美复制一个虚拟环境的时候，你可以运行以下命令创建一个新的虚拟环境
+    pip install -r requirements.txt
